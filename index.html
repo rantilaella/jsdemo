@@ -2,8 +2,10 @@ tekstiä
 
 <button type="button" onclick="Klikkaus()" >klikkaa</button>
 <h1>Koirat</h1>
-
+<img src="egg.jfif" alt="" id="munakuva">
+<p>dasd</p>
 <p>Koirat on </p id="numero"> 0 </p> kertaa tyhmempiä kuin kissat</p>
+
 <script>
     let klikkaukset = 0
    
@@ -11,6 +13,7 @@ tekstiä
     klikkaukset++
         documet.getElementById("numero").innerHTML = klikkaukset
         if(klikkaukset > 50){
+            documet.getElementById("munakuva").src = "egg2.png"
             alert("LOPETA")
         }
             
