@@ -1,11 +1,10 @@
 <head>
-    <title> </title>
+    <title>Klikkailu</title>
 </head>
 
 <body>
     <h1>Muna</h1>
-    <img onclick="Painanta()" src="egg.jfif" id="munakuva" width="500">
-    <p>Koirat on </p id="numero"> 0 </p> kertaa tyhmempiä kuin kissat</p>
+    <img onclick="Painanta()" src="egg.jfif" id="egg" width="500">
     
     <script>
     
@@ -15,7 +14,7 @@
             document.getElementById("numero").innerHTML = klikkaukset
     
             if(klikkaukset > 50){
-                document.getElementById("munakuva").src = "egg2.png"
+                document.getElementById("egg").src = "egg2.png"
                 alert("LOPETA")
             }     
         }
