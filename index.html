@@ -1,11 +1,15 @@
 tekstiä
 
 <button type="button" onclick="Klikkaus()" >klikkaa</button>
-<h1></h1>
+<h1>Koirat</h1>
+
+<p>Koirat on </p id="numero"> 0 </p> kertaa tyhmempiä kuin kissat</p>
 <script>
-    let klikkaukset = 0;
+    let klikkaukset = 0
+   
     function Klikkaus(){
-        klikkaukset++;
+    klikkaukset++
+        documet.getElementById("numero").innerHTML = klikkaukset
         if(klikkaukset > 50){
             alert("LOPETA")
         }
