@@ -1,17 +1,17 @@
 tekstiä
 
-<button type="button" onclick="Klikkaus()" >klikkaa</button>
-<h1>Koirat</h1>
-<img src="egg.jfif" alt="" id="munakuva">
-<p>dasd</p>
+<h1>Muna</h1>
+<img onclick="Painanta()" src="egg.jfif" id="munakuva">
+<p>asdf</p>
 <p>Koirat on </p id="numero"> 0 </p> kertaa tyhmempiä kuin kissat</p>
 
 <script>
     let klikkaukset = 0
    
-    function Klikkaus(){
+    function Painanta(){
     klikkaukset++
         documet.getElementById("numero").innerHTML = klikkaukset
+        
         if(klikkaukset > 50){
             documet.getElementById("munakuva").src = "egg2.png"
             alert("LOPETA")
