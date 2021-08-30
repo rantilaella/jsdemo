@@ -1,18 +1,23 @@
+<head>
+    <title> </title>
+</head>
 
-<h1>Muna</h1>
-<img onclick="Painanta()" src="egg.jfif" id="munakuva" width="500">
-<p>Koirat on </p id="numero"> 0 </p> kertaa tyhmempiä kuin kissat</p>
-
-<script>
-
-    let klikkaukset = 0
-    function Painanta(){
-        klikkaukset++
-        document.getElementById("numero").innerHTML = klikkaukset
-
-        if(klikkaukset > 50){
-            document.getElementById("munakuva").src = "egg2.png"
-            alert("LOPETA")
-        }     
-    }
-</script>
+<body>
+    <h1>Muna</h1>
+    <img onclick="Painanta()" src="egg.jfif" id="munakuva" width="500">
+    <p>Koirat on </p id="numero"> 0 </p> kertaa tyhmempiä kuin kissat</p>
+    
+    <script>
+    
+        let klikkaukset = 0
+        function Painanta(){
+            klikkaukset++
+            document.getElementById("numero").innerHTML = klikkaukset
+    
+            if(klikkaukset > 50){
+                document.getElementById("munakuva").src = "egg2.png"
+                alert("LOPETA")
+            }     
+        }
+    </script>
+</body>
